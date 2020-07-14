@@ -1,0 +1,19 @@
+
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(ÕÈÌÎ8¿íäÃ .
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÙúÜµ8¥†õ—¡.
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(öò•Ûüÿÿÿÿ8¤Áö—¡.
+bsquid:UnusedPrivateMethod1"1Remove this unused private "shutDownHook" method.(»Ûá®şÿÿÿÿ8”ÿÏÁ¡.
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(¾şñİÿÿÿÿÿ8¿íäÃ .
+[
+squid:S106!"9Replace this use of System.out or System.err by a logger.(¼••ëùÿÿÿÿ8É‘ø—¡.
+V
+squid:S106$"9Replace this use of System.out or System.err by a logger.(áç–‰8¢›î‡¡.
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(éË§Ùùÿÿÿÿ8şúƒ˜¡.
+V
+squid:S106&"9Replace this use of System.out or System.err by a logger.(¥À›8¿íäÃ .
+[
+squid:S106*"9Replace this use of System.out or System.err by a logger.(¯èçşÿÿÿÿ8¿íäÃ .

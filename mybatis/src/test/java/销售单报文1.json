@@ -1,0 +1,65 @@
+[
+  {
+    "ownerCode": "XGF10720",
+    "warehouseCode": "05191",
+    "orderType": "200201",
+    "orderNo": "订单单号",
+    "serviceAgent": "A1234567890",
+    "messageID": "2020521154612",
+    "batchNo": "B1234567890",
+    "level": 1,
+    "orderTime": "2020/5/21",
+    "deliveryType": "103801",
+    "carrierCode": "宅急送 ",
+    "printName": "测试对接打印名称",
+    "orderWeights": "100.5",
+    "orderNum": "",
+    "orderVolume": "",
+    "mailNo": "运单号",
+    "remark": "测试对接销售订单",
+    "senderInfo": {
+      "sendName": "闵雪花第三方",
+      "sendMobile": "13246767809",
+      "sendPhone": "13789767890",
+      "sendAddress": "深圳龙华区民治街道办人民北路33号",
+      "sendCompany": "第三方公司",
+      "sendCorporateOrganization": "第三方组织机构"
+    },
+    "receiverInfo": {
+      "receiveName": "李楠",
+      "receiveMobile": "13235767809",
+      "receivePhone": "13790767890",
+      "receiveAddress": "北京市顺义区后沙峪空港物流园八街3号宅急送",
+      "receiveCompany": "宅急送公司",
+      "receiveCorporateOrganization": "宅急送组织机构"
+    },
+    "addServices": {
+      "CODAmount": "30000.00",
+      "insuranceType": "2061",
+      "insuranceMode": "2071",
+      "goodsValue": "1000",
+      "reOriginal": "是",
+      "scheduleDay": "2020/5/22"
+    },
+    "goodsInfo": [
+      {
+        "LineNo": "00001",
+        "goodsCode": "1000000031125",
+        "supplierCode": "NKG",
+        "goodsName": "耐克对接1",
+        "stockType": "103701",
+        "goodsPrice": "99.99",
+        "salesqty": "200"
+      },
+      {
+        "LineNo": "00002",
+        "goodsCode": "1000000031126",
+        "supplierCode": "NKG",
+        "goodsName": "耐克对接2",
+        "stockType": "103701",
+        "goodsPrice": "159.99",
+        "salesqty": "300"
+      }
+    ]
+  }
+]

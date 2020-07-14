@@ -1,0 +1,6 @@
+
+[
+squid:S106?"9Replace this use of System.out or System.err by a logger.(ÖÝüßúÿÿÿÿ8Œ›Û—£.
+‰squid:UselessImportCheck	"YRemove this unused import 'org.springframework.beans.factory.support.RootBeanDefinition'.(î¬ä§ÿÿÿÿÿ8þ–Ù—£.
+V
+squid:S1069"9Replace this use of System.out or System.err by a logger.(õ¦ÌÊ8œÃÂ—£.

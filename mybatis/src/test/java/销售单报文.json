@@ -1,0 +1,56 @@
+[
+  {
+    "ownerCode": "XGF10720",
+    "warehouseCode": "05191",
+    "orderType": "200201",
+    "orderNo": "订单单号",
+    "serviceAgent": "A1234567890",
+    "messageID": "2020521154612",
+    "batchNo": "B1234567890",
+    "level": 1,
+    "orderTime": 1587977423866,
+    "deliveryType": "103801",
+    "carrierCode": "1231223",
+    "printName": "dayinmingc",
+    "orderWeights": 123,
+    "orderNum": "",
+    "orderVolume": "",
+    "mailNo": "123123",
+    "remark": "437809182374091823",
+    "senderInfo": {
+      "sendName": "发件人名称",
+      "sendMobile": "15555555555",
+      "sendPhone": "15555555555",
+      "sendAddress": "地址",
+      "sendCompany": "123",
+      "sendCorporateOrganization": "123"
+    },
+    "receiverInfo": {
+      "receiveName": "发件人名称",
+      "receiveMobile": "15555555555",
+      "receivePhone": "15555555555",
+      "receiveAddress": "地址",
+      "receiveCompany": "123",
+      "receiveCorporateOrganization": "123"
+    },
+    "addServices": {
+      "CODAmount": 1,
+      "insuranceType": "2061",
+      "insuranceMode": "2071",
+      "goodsValue": 123,
+      "reOriginal": "否",
+      "scheduleDay": 1587977423866
+    },
+    "goodsInfo": [
+      {
+        "LineNo": "0",
+        "goodsCode": "123123",
+        "supplierCode": "",
+        "goodsName": "1234",
+        "stockType": "103701",
+        "goodsPrice": 0.01,
+        "salesqty": 0.001
+      }
+    ]
+  }
+]

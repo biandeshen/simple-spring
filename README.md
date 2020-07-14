@@ -1,0 +1,3 @@
+model-frame: 通过引入tomcat依赖搭建的简单mvc框架
+model-mybatis: 通过引入spring核心包及mysql数据库依赖实现注解形式的自定义mybatis ORM框架
+model-test： 测试自定义框架的子项目

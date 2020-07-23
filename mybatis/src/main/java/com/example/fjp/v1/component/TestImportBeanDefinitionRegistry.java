@@ -22,6 +22,7 @@ import java.util.Set;
  * <author>          <time>          <version>
  * admin           2020/5/20           版本号
  */
+@SuppressWarnings("ALL")
 public class TestImportBeanDefinitionRegistry implements ImportBeanDefinitionRegistrar {
 	
 	private static Class targetClass = TestFactoryBean.class;

@@ -1,10 +1,11 @@
 package com.example.fjp.web.handler;
 
 import com.example.fjp.beans.BeanFactory;
+import com.example.fjp.httpserver.v1.request.HttpRequest;
+import com.example.fjp.httpserver.v1.response.HttpResponse;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -40,6 +41,21 @@ public class MappingHandler {
 		Object ctl = BeanFactory.getBean(controller);
 		Object response = method.invoke(ctl, parameters);
 		resp.getWriter().println(response.toString());
+	}
+	
+	public void handler(HttpRequest httpRequest, HttpResponse httpResponse) throws InvocationTargetException,
+	                                                                               IllegalAccessException {
+		Object[] parameters = new Object[args.length];
+		for (int i = 0; i < args.length; i++) {
+			// 此处将原本args中存储的参数名称替换为请求中的参数值，
+			// 由于正常请求中参数允许为空，故此处允许空值
+			parameters[i] = httpRequest.getParameter(args[i]);
+			
+		}
+		Object ctl = BeanFactory.getBean(controller);
+		Object response = method.invoke(ctl, parameters);
+		httpResponse.setResponseBody(response.toString());
+		
 	}
 	
 	MappingHandler(String uri, Method method, Class<?> controller, String[] args) {

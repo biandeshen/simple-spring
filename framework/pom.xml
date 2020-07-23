@@ -19,5 +19,11 @@
             <artifactId>tomcat-embed-core</artifactId>
             <version>8.5.23</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.example.fjp</groupId>
+            <artifactId>server</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 </project>

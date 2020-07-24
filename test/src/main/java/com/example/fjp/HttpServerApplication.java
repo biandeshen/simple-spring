@@ -1,5 +1,6 @@
 package com.example.fjp;
 
+
 import com.example.fjp.starter.CustomerApplication;
 
 /**
@@ -15,5 +16,4 @@ public class HttpServerApplication {
 	public static void main(String[] args) {
 		CustomerApplication.run(HttpServerApplication.class, args);
 	}
-	
 }

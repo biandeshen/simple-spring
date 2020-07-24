@@ -1,13 +1,12 @@
 
-nsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(Ä¼´±úÿÿÿÿ8•ø»½ .
-nsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ8þò‹Â¡.
-[
-squid:S106e"9Replace this use of System.out or System.err by a logger.(…Ÿ—Üûÿÿÿÿ8Á½ˆÂ¡.
-nsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(è¬Óáþÿÿÿÿ8•ø»½ .
-nsquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(Þ‘ÑËùÿÿÿÿ8þò‹Â¡.
-[
-squid:S106j"9Replace this use of System.out or System.err by a logger.(÷ã¤“þÿÿÿÿ8¬ÞÂ¡.
-Ksquid:S1068"(Remove this unused "args" private field.(…òè¹üÿÿÿÿ8•ø»½ .
-isquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(ÎúÁ¾8þò‹Â¡.
-isquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(üš†8•ø»½ .
-nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(ºÇ´Ìûÿÿÿÿ8•ø»½ .
+[	java:S125"<This block of commented-out lines of code should be removed.(è¬Óáþÿÿÿÿ8Ç¨½É·.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(÷ã¤“þÿÿÿÿ8Ç¨½É·.
+[	java:S125"<This block of commented-out lines of code should be removed.(ºÇ´Ìûÿÿÿÿ8Ç¨½É·.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(…Ÿ—Üûÿÿÿÿ8Ç¨½É·.
+V	java:S125"<This block of commented-out lines of code should be removed.(üš†8Ç¨½É·.
+V	java:S125"<This block of commented-out lines of code should be removed.(ÎúÁ¾8Ç¨½É·.
+[	java:S125"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ8Ç¨½É·.
+[	java:S125"<This block of commented-out lines of code should be removed.(Ä¼´±úÿÿÿÿ8Ç¨½É·.
+[	java:S125"<This block of commented-out lines of code should be removed.(Þ‘ÑËùÿÿÿÿ8Ç¨½É·.
+H
+java:S1068"(Remove this unused "args" private field.(…òè¹üÿÿÿÿ8Ç¨½É·.

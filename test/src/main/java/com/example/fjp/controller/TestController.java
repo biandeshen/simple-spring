@@ -17,6 +17,7 @@ import com.example.fjp.web.mvc.RequestParam;
  */
 @Controller
 public class TestController {
+	
 	@AutoWired
 	private InfoService infoService;
 	

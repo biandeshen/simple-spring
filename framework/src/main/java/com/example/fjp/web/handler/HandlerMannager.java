@@ -47,7 +47,7 @@ public class HandlerMannager {
 					paramNameList.add(parameter.getDeclaredAnnotation(RequestParam.class).value());
 				}
 			}
-			String[] params = paramNameList.toArray(new String[paramNameList.size()]);//
+			String[] params = paramNameList.toArray(new String[0]);
 			MappingHandler mappingHandler = new MappingHandler(uri, method, cls, params);
 			mappingHandlerList.add(mappingHandler);
 			MappingHandler putIfAbsent = mappingHandlerHashMap.putIfAbsent(uri, mappingHandler);

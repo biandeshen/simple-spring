@@ -1,6 +1,9 @@
 package com.example.fjp.core;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.JarURLConnection;
@@ -27,12 +30,14 @@ import java.util.jar.JarFile;
  * admin           2020/5/12           版本号
  */
 public class ClassScanner {
+	private static final Logger logger = LoggerFactory.getLogger(ClassScanner.class);
+	
 	public static List<Class<?>> scanClasses(String packageName) throws IOException, ClassNotFoundException,
 	                                                                    URISyntaxException {
 		List<Class<?>> classList = new ArrayList<>();
 		// classLoader.getResources 需要使用此种 斜线
 		String path = packageName.replace(".", "/");
-		System.out.println("path = " + path);
+		logger.debug("path :{}", path);
 		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 		// 参考 class.getResource与 classLoader.getResource 加深理解
 		Enumeration<URL> resources = classLoader.getResources(path);

@@ -7,8 +7,10 @@ import com.example.fjp.httpserver.v1.response.HttpResponse;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.net.URLDecoder;
 
 /**
  * @FileName: MappingHandler
@@ -19,6 +21,7 @@ import java.lang.reflect.Method;
  * <author>          <time>          <version>
  * admin           2020/5/12           版本号
  */
+@SuppressWarnings("ALL")
 public class MappingHandler {
 	private String uri;
 	private Method method;
@@ -28,10 +31,6 @@ public class MappingHandler {
 	public void handler(ServletRequest req, ServletResponse resp) throws IllegalAccessException,
 	                                                                     InstantiationException,
 	                                                                     InvocationTargetException, IOException {
-		//String requestUri = ((HttpServletRequest) req).getRequestURI();
-		//if (!uri.equals(requestUri)) {
-		//	return false;
-		//}
 		Object[] parameters = new Object[args.length];
 		for (int i = 0; i < args.length; i++) {
 			// 此处将原本args中存储的参数名称替换为请求中的参数值，
@@ -43,13 +42,13 @@ public class MappingHandler {
 		resp.getWriter().println(response.toString());
 	}
 	
-	public void handler(HttpRequest httpRequest, HttpResponse httpResponse) throws InvocationTargetException,
-	                                                                               IllegalAccessException {
+	public void handler(HttpRequest httpRequest, HttpResponse httpResponse) throws InvocationTargetException, IllegalAccessException, UnsupportedEncodingException {
 		Object[] parameters = new Object[args.length];
 		for (int i = 0; i < args.length; i++) {
 			// 此处将原本args中存储的参数名称替换为请求中的参数值，
 			// 由于正常请求中参数允许为空，故此处允许空值
-			parameters[i] = httpRequest.getParameter(args[i]);
+			//parameters[i] = new String(httpRequest.getParameter(args[i]).getBytes("iso8859-1"),"UTF-8");
+			parameters[i] = URLDecoder.decode(httpRequest.getParameter(args[i]),"UTF-8");
 			
 		}
 		Object ctl = BeanFactory.getBean(controller);

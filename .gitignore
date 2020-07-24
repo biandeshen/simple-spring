@@ -46,3 +46,10 @@ test/src/main/resources/
 test/src/test/
 test/target/generated-sources/
 test/target/tomcat.10087/
+framework/target/generated-test-sources/
+framework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+framework/target/test-classes/
+mybatis/target/maven-archiver/
+mybatis/target/maven-status/
+test/dependency-reduced-pom.xml
+tomcat.10087/

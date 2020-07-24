@@ -1,4 +1,6 @@
 
-I
-java:S1068"'Remove this unused "uri" private field.(ó»şúÿÿÿÿ8Ã®Ì².
-]	java:S125"<This block of commented-out lines of code should be removed.(İïøÏøÿÿÿÿ8Ã®Ì².
+™
+java:S1130"yRemove the declaration of thrown exception 'java.lang.InstantiationException', as it cannot be thrown from method's body.(ƒü´´üÿÿÿÿ8·ĞØ·.
+V	java:S125"<This block of commented-out lines of code should be removed.(èú©ò8·ĞØ·.
+G
+java:S1068"'Remove this unused "uri" private field.(ó»şúÿÿÿÿ8·ĞØ·.

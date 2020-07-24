@@ -25,12 +25,8 @@ public class CustomerServer {
 	
 	public void startServer() throws IOException {
 		httpServer = AbstractHttpServer.create(new InetSocketAddress(9999), 1);
-		//httpServer = AbstractHttpServer.create();
-		//httpServer.bind(new InetSocketAddress(9999), 1);
-		
 		httpServer.createContext("/", new DispatcherHandler());
 		start();
-		
 	}
 	
 	

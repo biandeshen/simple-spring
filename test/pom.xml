@@ -21,7 +21,7 @@
         <dependency>
             <groupId>com.example.fjp</groupId>
             <artifactId>framework</artifactId>
-            <version>0.0.2</version>
+            <version>0.0.3</version>
         </dependency>
     </dependencies>
 

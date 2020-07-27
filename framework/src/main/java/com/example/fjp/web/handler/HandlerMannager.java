@@ -1,5 +1,6 @@
 package com.example.fjp.web.handler;
 
+import com.example.fjp.httpserver.v1.common.HttpMethod;
 import com.example.fjp.web.mvc.Controller;
 import com.example.fjp.web.mvc.RequestMapping;
 import com.example.fjp.web.mvc.RequestParam;
@@ -41,6 +42,7 @@ public class HandlerMannager {
 				continue;
 			}
 			String uri = method.getDeclaredAnnotation(RequestMapping.class).value();
+			HttpMethod[] reqMethod = method.getDeclaredAnnotation(RequestMapping.class).method();
 			List<String> paramNameList = new ArrayList<>();
 			for (Parameter parameter : method.getParameters()) {
 				if (parameter.isAnnotationPresent(RequestParam.class)) {
@@ -48,7 +50,8 @@ public class HandlerMannager {
 				}
 			}
 			String[] params = paramNameList.toArray(new String[0]);
-			MappingHandler mappingHandler = new MappingHandler(uri, method, cls, params);
+			// 请求方法设置
+			MappingHandler mappingHandler = new MappingHandler(uri, method, cls, params, reqMethod);
 			mappingHandlerList.add(mappingHandler);
 			MappingHandler putIfAbsent = mappingHandlerHashMap.putIfAbsent(uri, mappingHandler);
 			if (putIfAbsent != null) {

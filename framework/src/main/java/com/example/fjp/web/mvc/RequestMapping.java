@@ -1,5 +1,7 @@
 package com.example.fjp.web.mvc;
 
+import com.example.fjp.httpserver.v1.common.HttpMethod;
+
 import java.lang.annotation.*;
 
 /**
@@ -13,5 +15,9 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface RequestMapping {
+	// 路径
 	String value();
+	
+	// 方法
+	HttpMethod[] method() default {HttpMethod.GET};
 }

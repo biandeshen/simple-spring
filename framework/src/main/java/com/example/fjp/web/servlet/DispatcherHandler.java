@@ -7,6 +7,7 @@ import com.example.fjp.httpserver.v1.response.HttpResponse;
 import com.example.fjp.web.handler.HandlerMannager;
 import com.example.fjp.web.handler.MappingHandler;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -22,18 +23,15 @@ import java.util.HashMap;
 public class DispatcherHandler implements HttpHandler {
 	
 	@Override
-	public void handle(HttpRequest httpRequest, HttpResponse httpResponse) {
+	public void handle(HttpRequest httpRequest, HttpResponse httpResponse) throws IOException {
 		String uri = httpRequest.getRequestURI();
 		MappingHandler mappingHandler = HandlerMannager.mappingHandlerHashMap.get(uri);
 		if (mappingHandler != null) {
 			try {
 				mappingHandler.handler(httpRequest, httpResponse);
-			} catch (IllegalAccessException e) {
-				e.printStackTrace();
-			} catch (InvocationTargetException e) {
-				e.printStackTrace();
-			} catch (UnsupportedEncodingException e) {
-				e.printStackTrace();
+			} catch (InvocationTargetException | IllegalAccessException | UnsupportedEncodingException e) {
+				// 封装成IOException异常，或针对对应异常处理
+				throw new IOException(e);
 			}
 		} else {
 			HttpHeaders httpHeaders = new HttpHeaders(new HashMap<>(8));

@@ -26,7 +26,8 @@ public class AccountMapperFactoryBean implements FactoryBean<AccountMapper> {
 	@Override
 	public AccountMapper getObject() throws Exception {
 		Object proxyInstance = Proxy.newProxyInstance(AccountMapper.class.getClassLoader(),
-		                                              new Class[]{AccountMapper.class}, new AccountMapperProxy());
+		                                              new Class[]{AccountMapper.class},
+		                                              new AccountMapperProxy());
 		return (AccountMapper) proxyInstance;
 	}
 	

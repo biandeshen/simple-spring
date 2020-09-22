@@ -1,12 +1,11 @@
 
-U
-java:S1118":Add a private constructor to hide the implicit public one.(»ĞÕì8Ì»éÖ·.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(å¿¾Òúÿÿÿÿ8Ì»éÖ·.
-R
-java:S1135"2Complete the task associated to this TODO comment.(ÿ‘Èèúÿÿÿÿ8Ì»éÖ·.
-C
-java:S1185"(Remove this method to simply inherit it.(¬ı„€8Ì»éÖ·.
-C
-java:S1185"(Remove this method to simply inherit it.(ˆç8Ì»éÖ·.
-H
-java:S1185"(Remove this method to simply inherit it.(Øàİšùÿÿÿÿ8Ì»éÖ·.
+W
+java:S1118 ":Add a private constructor to hide the implicit public one.(»ĞÕì8Ì»éÖ·.
+E
+java:S1185j"(Remove this method to simply inherit it.(ˆç8Ì»éÖ·.
+E
+java:S1185U"(Remove this method to simply inherit it.(¬ı„€8Ì»éÖ·.
+T
+java:S11354"2Complete the task associated to this TODO comment.(ÿ‘Èèúÿÿÿÿ8Ì»éÖ·.
+J
+java:S1185p"(Remove this method to simply inherit it.(Øàİšùÿÿÿÿ8Ì»éÖ·.

@@ -1,6 +1,6 @@
 package com.example.fjp.v1b.config;
 
-import com.example.fjp.v1.anno.EnableMapperScanner;
+import com.example.fjp.v1b.anno.EnableMapperScanner;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Configuration;
  * admin           2020/5/20           版本号
  */
 @Configuration
-@ComponentScan(value = {"com.example.fjp.v1"})
-@EnableMapperScanner(basePackages = {"com.example.fjp.v1.dao"})
+@ComponentScan(value = {"com.example.fjp.v1b"})
+@EnableMapperScanner(basePackages = {"com.example.fjp.v1b.dao"})
 public class SpringMybatisConfig {
 	
 }

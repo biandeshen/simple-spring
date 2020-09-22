@@ -1,8 +1,8 @@
 package com.example.fjp.v1b.factorybean;
 
-import com.example.fjp.v1.anno.TestSelect;
-import com.example.fjp.v1.entity.AccountInfo;
-import com.example.fjp.v1.entity.ProductInfo;
+import com.example.fjp.v1b.anno.TestSelect;
+import com.example.fjp.v1b.entity.AccountInfo;
+import com.example.fjp.v1b.entity.ProductInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +26,15 @@ public class TestFactoryBean<T> implements FactoryBean<T> {
 	
 	public TestFactoryBean(Class<T> targetClass) {
 		this.targetClass = targetClass;
+	}
+	
+	public TestFactoryBean(String targetClassName) {
+		try {
+			this.targetClass = (Class<T>) Class.forName(targetClassName);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			System.exit(-1);
+		}
 	}
 	
 	@Override
@@ -81,9 +90,10 @@ class TargetProxy implements InvocationHandler {
 		
 		// 模拟查询数据库后返回
 		Class<?> returnType = method.getReturnType();
+		Object returnObject = returnType.newInstance();
 		if (ProductInfo.class.equals(returnType)) {
 			// 查询返回 AccountInfo 对象
-			ProductInfo productInfo = new ProductInfo();
+			ProductInfo productInfo = (ProductInfo) returnObject;
 			productInfo.setId("1");
 			productInfo.setNum("100");
 			productInfo.setProductId("1");
@@ -92,7 +102,7 @@ class TargetProxy implements InvocationHandler {
 		}
 		if (AccountInfo.class.equals(returnType)) {
 			// 查询返回 AccountInfo 对象
-			AccountInfo accountInfo = new AccountInfo();
+			AccountInfo accountInfo = (AccountInfo) returnObject;
 			accountInfo.setAccountId("1");
 			accountInfo.setAccountName("test");
 			accountInfo.setId("1");

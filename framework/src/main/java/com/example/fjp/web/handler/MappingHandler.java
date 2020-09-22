@@ -12,10 +12,6 @@ import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URLDecoder;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -59,6 +55,7 @@ public class MappingHandler {
 			for (int i = 0; i < args.length; i++) {
 				// 此处将原本args中存储的参数名称替换为请求中的参数值，
 				// 由于正常请求中参数允许为空，故此处允许空值
+				// TODO 增加对 multipart/form-data 和 application/x-www-form-urlencoded 的处理
 				parameters[i] = URLDecoder.decode(httpRequest.getParameter(args[i]), "UTF-8");
 			}
 			Object ctl = BeanFactory.getBean(controller);

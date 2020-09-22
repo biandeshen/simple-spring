@@ -1,7 +1,7 @@
 package com.example.fjp.v1b;
 
-import com.example.fjp.v1.config.SpringMybatisConfig;
-import com.example.fjp.v1.dao.AccountMapper;
+import com.example.fjp.v1b.config.SpringMybatisConfig;
+import com.example.fjp.v1b.dao.AccountMapper;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -21,7 +21,7 @@ public class MainTest {
 			System.out.println("beanDefinitionName = " + beanDefinitionName);
 		}
 		AccountMapper accountMapper = (AccountMapper) context.getBean("accountMapper");
-		accountMapper.qryById("111","false");
+		accountMapper.qryById("111", "false");
 		
 	}
 	

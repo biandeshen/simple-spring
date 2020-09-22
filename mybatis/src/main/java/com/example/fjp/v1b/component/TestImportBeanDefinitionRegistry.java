@@ -1,7 +1,8 @@
 package com.example.fjp.v1b.component;
 
-import com.example.fjp.v1.anno.EnableMapperScanner;
-import com.example.fjp.v1.factorybean.TestFactoryBean;
+import com.example.fjp.v1b.anno.EnableMapperScanner;
+import com.example.fjp.v1b.factorybean.TestFactoryBean;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
@@ -20,9 +21,10 @@ import java.util.Set;
  * <author>          <time>          <version>
  * admin           2020/5/20           版本号
  */
+@Slf4j
 public class TestImportBeanDefinitionRegistry implements ImportBeanDefinitionRegistrar {
 	
-	private static Class targetClass = TestFactoryBean.class;
+	private static Class<?> targetClass = TestFactoryBean.class;
 	
 	@Override
 	public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
@@ -52,13 +54,13 @@ public class TestImportBeanDefinitionRegistry implements ImportBeanDefinitionReg
 				GenericBeanDefinition beanDefinition = (GenericBeanDefinition) bdh.getBeanDefinition();
 				//拿到定义中的接口的class字符串
 				String sourceClass = beanDefinition.getBeanClassName();
-				System.out.println("原始接口的class类型：" + sourceClass);
+				log.info("原始接口的class类型：" + sourceClass);
 				// 实例化接口的类型 代理后的FactoryBean
 				beanDefinition.setBeanClass(targetClass);
 				// 为自定义的FactoryBean设置构造方法的参数，以获取具体的返回类型
 				beanDefinition.getConstructorArgumentValues().addGenericArgumentValue(sourceClass);
 			}
-			System.out.println("beanDefinitionHolders = " + beanDefinitionHolders);
+			log.info("beanDefinitionHolders = " + beanDefinitionHolders);
 		}
 	}
 }

@@ -1,6 +1,6 @@
 package com.example.fjp.v1b.anno;
 
-import com.example.fjp.v1.component.TestImportBeanDefinitionRegistry;
+import com.example.fjp.v1b.component.TestImportBeanDefinitionRegistry;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;

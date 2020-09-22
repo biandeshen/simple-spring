@@ -1,15 +1,27 @@
 
-X
-java:S1444"8Make this "public static mappingHandlerList" field final(¢àÖ‚ÿÿÿÿÿ8ñÁ³Ö·.
-~
-java:S1104"^Make mappingHandlerList a static final constant or non-public and provide accessors if needed.(¢àÖ‚ÿÿÿÿÿ8ñÁ³Ö·.
-U
-java:S1118":Add a private constructor to hide the implicit public one.(š”õ§8ñÁ³Ö·.
-[
-java:S1444";Make this "public static mappingHandlerHashMap" field final(ÚÈ¬óøÿÿÿÿ8ñÁ³Ö·.
-=
-java:S2386"Make this member "protected".(¢àÖ‚ÿÿÿÿÿ8¾¬÷Ö·.
-=
-java:S2386"Make this member "protected".(ÚÈ¬óøÿÿÿÿ8¾¬÷Ö·.
-
-java:S1104"aMake mappingHandlerHashMap a static final constant or non-public and provide accessors if needed.(ÚÈ¬óøÿÿÿÿ8ñÁ³Ö·.
+ƒ
+java:S1104"aMake mappingHandlerHashMap a static final constant or non-public and provide accessors if needed.(ÚÈ¬óøÿÿÿÿ8àó——».
+]
+java:S1444";Make this "public static mappingHandlerHashMap" field final(ÚÈ¬óøÿÿÿÿ8àó——».
+T
+java:S11357"2Complete the task associated to this TODO comment.(²ıß³øÿÿÿÿ8÷™»—».
+O
+java:S1135="2Complete the task associated to this TODO comment.(¸×´Ù8³ÉÓ—».
+O
+java:S1135A"2Complete the task associated to this TODO comment.(±™äÚ8´§Í—».
+?
+java:S2386"Make this member "protected".(ÚÈ¬óøÿÿÿÿ8àó——».
+W
+java:S1118":Add a private constructor to hide the implicit public one.(š”õ§8àó——».
+?
+java:S2386"Make this member "protected".(¢àÖ‚ÿÿÿÿÿ8àó——».
+Z
+java:S1444"8Make this "public static mappingHandlerList" field final(¢àÖ‚ÿÿÿÿÿ8àó——».
+€
+java:S1104"^Make mappingHandlerList a static final constant or non-public and provide accessors if needed.(¢àÖ‚ÿÿÿÿÿ8àó——».
+o
+java:S3776'"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÒúÚÄ8ñ¦Ì—».
+T
+java:S11354"2Complete the task associated to this TODO comment.(¢ê¹¯ıÿÿÿÿ8÷™»—».
+O
+java:S1135."2Complete the task associated to this TODO comment.(—÷õÏ8“ÏØ—».

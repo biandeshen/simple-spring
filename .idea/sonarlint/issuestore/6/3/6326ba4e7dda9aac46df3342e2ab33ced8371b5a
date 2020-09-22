@@ -1,13 +1,13 @@
 
-U
-java:S1118":Add a private constructor to hide the implicit public one.(ÕÈÌÎ8€ËïÖ·.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(¾şñİÿÿÿÿÿ8€ËïÖ·.
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÙúÜµ8€ËïÖ·.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(éË§Ùùÿÿÿÿ8€ËïÖ·.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(öò•Ûüÿÿÿÿ8€ËïÖ·.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(¼••ëùÿÿÿÿ8€ËïÖ·.
-S	java:S106"9Replace this use of System.out or System.err by a logger.(áç–‰8€ËïÖ·.
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¥À›8€ËïÖ·.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(¯èçşÿÿÿÿ8€ËïÖ·.
-Q
-java:S1144"1Remove this unused private "shutDownHook" method.(»Ûá®şÿÿÿÿ8€ËïÖ·.
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ÕÈÌÎ8€ËïÖ·.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(éË§Ùùÿÿÿÿ8€ËïÖ·.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(öò•Ûüÿÿÿÿ8€ËïÖ·.
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(áç–‰8€ËïÖ·.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¾şñİÿÿÿÿÿ8€ËïÖ·.
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(¥À›8€ËïÖ·.
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(¼••ëùÿÿÿÿ8€ËïÖ·.
+S
+java:S11441"1Remove this unused private "shutDownHook" method.(»Ûá®şÿÿÿÿ8€ËïÖ·.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÙúÜµ8€ËïÖ·.
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(¯èçşÿÿÿÿ8€ËïÖ·.

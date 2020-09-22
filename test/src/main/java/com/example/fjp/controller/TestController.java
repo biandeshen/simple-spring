@@ -7,6 +7,8 @@ import com.example.fjp.web.mvc.Controller;
 import com.example.fjp.web.mvc.RequestMapping;
 import com.example.fjp.web.mvc.RequestParam;
 
+import java.io.File;
+
 /**
  * @FileName: TestController
  * @Author: admin
@@ -25,5 +27,10 @@ public class TestController {
 	@RequestMapping(value = "/info", method = {HttpMethod.POST})
 	public String getInfo(@RequestParam("name") String name, @RequestParam("passwd") String passwd) {
 		return infoService.getInfo(name) + passwd;
+	}
+	
+	@RequestMapping(value = "/file", method = {HttpMethod.POST})
+	public String getInfo(File file) {
+		return file.getName().concat("file");
 	}
 }

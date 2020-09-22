@@ -32,7 +32,8 @@ public class BeanFactory {
 		while (!toCreate.isEmpty()) {
 			int remainSize = toCreate.size();
 			// 禁止使用一般的for循环，一般的循环过程中调用remove方法会发生异常，删除不可预知的对象
-			for (Iterator<Class<?>> iterator = toCreate.iterator(); iterator.hasNext(); ) {
+			Iterator<Class<?>> iterator = toCreate.iterator();
+			while (iterator.hasNext()) {
 				if (finishCreate(iterator.next())) {
 					iterator.remove();
 				}
@@ -44,7 +45,7 @@ public class BeanFactory {
 			//	}
 			//}
 			if (toCreate.size() == remainSize) {
-				throw new Exception("cyc le dependency!");
+				throw new Exception("cycle dependency!");
 			}
 		}
 	}
@@ -57,6 +58,7 @@ public class BeanFactory {
 		Object bean = cls.newInstance();
 		// 遍历此类的所有成员变量
 		for (Field field : cls.getDeclaredFields()) {
+			// TODO 其他成员变量注解
 			// 对含有自动注入的成员变量进行初始化
 			if (field.isAnnotationPresent(AutoWired.class)) {
 				Class<?> fieldType = field.getType();
